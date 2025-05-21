@@ -1,0 +1,12 @@
+
+
+.navbar{
+    justify-content: space-between;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+    padding-right: 1rem;
+}
+

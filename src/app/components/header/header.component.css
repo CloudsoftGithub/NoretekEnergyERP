@@ -1,0 +1,33 @@
+body{
+    height: 5000px;
+    padding: 48px;
+}
+.navbar{
+    background-color: darkblue;
+}
+.navbar-text,
+.navbar-brand,
+.navbar-link, .nav-link,.nav-item, .active{
+    color: white !important;
+}
+
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    opacity: 0;
+    transition: all 0.2s;
+}
+.nav-link:hover::after{
+    opacity: 1;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.logo-img{
+margin-top: -2px;
+}
