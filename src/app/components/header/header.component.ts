@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { MaterialModule } from '../../material/material.module';
+import { NavbarService } from '../../services/navbar.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -9,4 +11,6 @@ import { MaterialModule } from '../../material/material.module';
 })
 export class HeaderComponent {
   
+
+   
 }

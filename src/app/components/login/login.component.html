@@ -1,44 +1,83 @@
-<div class="container" style="margin: 2rem">
-  <h1
-    style="
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: rgb(83, 83, 195);
-      text-align: center;
-    "
-  >
-    Login
-  </h1>
-
-<div
-  class="container min-vh100 d-flex justify-content-center align-items:center"
->
-
-</div>
-<form>
-    <!--
-  <div class="container d-flex justify-content-center align-items-center min-vh-100">
-          <div class="row">
-              <div class="col-md-6 left-box">
-                  <div class="features-image">
-                      <img src="src/assests/testlogo.png" alt="logo" class="image-fluid" style="width: 20px; height: 25px;" >
-                  </div>
-                  <p>Welcome to Noretek Energy Ltd.</p>
-                                         <small></small>
-
-              </div>
-
-              <div class="col-md-6  right-box ">
-                 Login here
-              </div>
+<div class="container-fluid">
+  <div class="row align-items-center min-vh-100">
+ 
+    <div class="col-12">
+      <div class="d-flex flex-column align-items-center ">
+        <div class="w-50">
+          <h1>Sign In</h1>
+          <p style="font-weight: 500">
+            <strong> Don't have an account? </strong> <span class="text-primary" style="cursor: pointer;"> Sign up here </span>
+          </p>
+        </div>
+        <form class="w-50" style="font-weight: 500; font-style: initial">
+          <div class="mt-1">
+            <label for="" class="form-label" style="size: 18px">
+              Email Address
+            </label>
+            <input
+            name="userName"
+              [(ngModel)] = "loginObj.userName"
+              style="background-color: rgba(222, 186, 227, 0.156)" 
+              type="text"
+              class="form-control"
+              formcControlName="username"
+              placeholder="User Name"
+              required
+            />
           </div>
+
+          <div class="mt-2">
+            <label for="password" class="form-label" style="size: 18px">
+              Password
+            </label>
+            <input
+            [(ngModel)] = "loginObj.password"
+            name="password"
+              style="background-color: rgba(222, 186, 227, 0.156)"
+              type="password"
+              class="form-control"
+              formcControlName="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="btn btn-primary py-2 mt-2 w-100 roundes-2 btn.custom"
+              (click)="onLogin()"
+            >
+              Sign in <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </form>
+        <div style="padding: 4px;">
+          <button class="btn btn-primary" (click)="onClickSuperAdmin()" > Super Admin Dash Link</button>
+
+          <div class="mt-2">
+             <button class="btn btn-primary" (click)="onClickAdmin()" >  Admin Dash Link</button>
+        </div>
+         <div class="mt-2">
+             <button class="btn btn-primary" (click)="onClickEnergyManger()" > Energy Manager Link</button>
+        </div>
+        <div class="mt-2"> 
+             <button class="btn btn-primary" (click)="onClickEnrollmentOffice()" >  Enrollment Office Link</button>
+        </div>
+                <div class="mt-2">
+             <button class="btn btn-primary" (click)="onClickCustomerSupport()" >  Customer Support Link</button>
+        </div>
+       
+        <div class="mt-2">
+             <button class="btn btn-primary" (click)="onClickCustomer()" >  Customer Link</button>
+        </div>
+        </div>
+        
+
+
+        
+      </div>
+   
+  
     </div>
-
-  
-    -->
-</form>
-  
-
-
-
-
+  </div>
 </div>

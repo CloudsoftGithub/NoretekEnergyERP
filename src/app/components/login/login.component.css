@@ -1,0 +1,12 @@
+.background{
+    background-image: url("https://demo.paymoney.techvill.net/public/frontend/templates/images/home/bg-pattern.png");
+    height: 100vh;
+    background-size: cover ;
+}
+
+.btn.custom{
+    background-color: blueviolet;
+}
+.btn.custom:hover{
+    background-color: rgb(10, 10, 87);
+}

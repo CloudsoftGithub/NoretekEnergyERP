@@ -7,11 +7,13 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
 import { CarouselComponent } from "./components/carousel/carousel.component";
+import { SuperAdminHeaderComponent } from './components/super-admin-header/super-admin-header.component';
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, MaterialModule,
     HeaderComponent, FooterComponent,
-    AboutComponent, HomeComponent, ServicesComponent, CarouselComponent],
+    AboutComponent, HomeComponent, ServicesComponent, CarouselComponent, SuperAdminHeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
