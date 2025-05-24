@@ -5,26 +5,30 @@
       [opened]="(isHandset$ | async) === false">
 
     <mat-toolbar style="font-weight: 600; margin-top: 55px">
-       <mat-icon
+            <mat-icon
         aria-hidden="false"
         aria-label="Example home icon"
         fontIcon="home"
-      ></mat-icon>  
-    Energy Manager</mat-toolbar>
+      ></mat-icon>
+
+
+      Customer
+    
+    </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item RouterLink="#">
+         <a mat-list-item RouterLink="#">
         <span class="material-symbols-outlined"> dashboard </span>
         Reports
       </a>
-            <a mat-list-item RouterLink="#">Add Meters to Units</a>
+      <a mat-list-item RouterLink="#">  Register  </a> 
+       <a mat-list-item RouterLink="#"> Purchase Gas</a>
+       <a mat-list-item RouterLink="#">Contact <br> Energy Manager</a>
+              <a mat-list-item RouterLink="#">Contact Support</a>
 
-      <a mat-list-item RouterLink="#">
-      
-        Notification
-      </a>
-      <a mat-list-item RouterLink="#">Transactions</a>
-       
-      </mat-nav-list>
+      <a mat-list-item RouterLink="#">Transaction History</a>
+            <a mat-list-item RouterLink="#">  Notifications  </a> 
+
+    </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -37,9 +41,10 @@
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
       }
-      <span>Noretek Energy ERP</span>
+      <span>Noretek Energy ERP </span>
+
     </mat-toolbar>
     <!-- Add Content Here -->
-     <app-energy-manager-dashboard></app-energy-manager-dashboard>
+     <app-customer-dashboard></app-customer-dashboard>
   </mat-sidenav-content>
 </mat-sidenav-container>

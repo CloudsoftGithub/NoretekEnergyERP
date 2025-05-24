@@ -9,9 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  selector: 'app-super-admin-dashboard',
-  templateUrl: './super-admin-dashboard.component.html',
-  styleUrl: './super-admin-dashboard.component.css',
+  selector: 'app-customer-support-dashboard',
+  templateUrl: './customer-support-dashboard.component.html',
+  styleUrl: './customer-support-dashboard.component.css',
   imports: [
     AsyncPipe,
     MatGridListModule,
@@ -21,7 +21,7 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule
   ]
 })
-export class SuperAdminDashboardComponent {
+export class CustomerSupportDashboardComponent {
   private breakpointObserver = inject(BreakpointObserver);
 
   /** Based on the screen size, switch from standard to one column per row */

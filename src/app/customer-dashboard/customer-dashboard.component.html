@@ -1,10 +1,12 @@
 <div class="grid-container">
-   
-   <img src="/assests/dashboarIcon.png" alt="dashboarIcon" width="250px"/> 
-      <h1 class="mat-h1"  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-    <strong>Energy Manager Dashboard</strong></h1>   
- 
 
+ 
+     <img src="/assests/dashboarIcon.png" alt="dashboarIcon" width="250px"/> 
+      <h1 class="mat-h1"  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <strong>Customer Dashboard</strong></h1> 
+  
+ 
+ 
   <mat-grid-list cols="2" rowHeight="350px">
     @for (card of cards | async; track card) {
       <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
@@ -22,10 +24,7 @@
             </mat-card-title>
           </mat-card-header>
           <mat-card-content class="dashboard-card-content">
-            <div>
-              <h2 style="text-align: left; margin-top: 5px;"> Add Meters to the Entolled Units </h2>
-
-            </div>
+            <div>Card Content Here</div>
           </mat-card-content>
         </mat-card>
       </mat-grid-tile>

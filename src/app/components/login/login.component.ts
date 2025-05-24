@@ -37,16 +37,16 @@ export class LoginComponent {
   onClickEnergyManger(){
     this.router.navigateByUrl("/energy-manager-navigation");
   }
-  onClickEnrollmentOffice(){
+  onClickEnrollmentOfficer(){
     this.router.navigateByUrl("/enrolment-officer-navigation");
 
   }
   onClickCustomerSupport(){
-    this.router.navigateByUrl("/enrolment-officer-navigation");
+    this.router.navigateByUrl("/customer-support-navigation");
   }
 
   onClickCustomer(){
-        this.router.navigateByUrl("/cutomer-navigation");
+        this.router.navigateByUrl("/customer-navigation");
 
   }
 

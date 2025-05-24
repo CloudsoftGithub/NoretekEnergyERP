@@ -1,0 +1,47 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar style="font-weight: 600; margin-top: 55px">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      ></mat-icon>
+      Enrolment
+    </mat-toolbar>
+    <mat-nav-list style="text-decoration: solid;">
+      <a mat-list-item RouterLink="#">
+        <span class="material-symbols-outlined"> dashboard </span>
+        Overview
+      </a>
+      <a mat-list-item RouterLink="#"> Customer Enrollment </a>
+      <a mat-list-item RouterLink="#">Meter Enrolment</a>
+      <a mat-list-item RouterLink="#">Property Enrolment</a>
+      <a mat-list-item RouterLink="#">Units Enrolment</a>
+      <a mat-list-item RouterLink="#">Reports</a>
+     </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      @if (isHandset$ | async) {
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      }
+      <span>Noretek Energy ERP </span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <app-enrolment-officer-dashboard></app-enrolment-officer-dashboard>
+  </mat-sidenav-content>
+</mat-sidenav-container>

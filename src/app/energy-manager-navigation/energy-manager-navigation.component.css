@@ -1,11 +1,10 @@
 .sidenav-container {
   height: 100%;
-  background-color: rgba(217, 224, 227, 0.716);
-  
+  background-color: rgba(217, 224, 227, 0.716);  
 }
 
 .sidenav {
-  width: 220px;
+  width: 270px;
   background-color: rgb(128, 106, 158) !important;
   padding-inline: 2em;
 }

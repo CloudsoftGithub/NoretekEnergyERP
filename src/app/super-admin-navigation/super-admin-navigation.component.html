@@ -4,7 +4,15 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
 
-    <mat-toolbar style="font-weight: 600; margin-top: 55px">Super Admin</mat-toolbar>
+    <mat-toolbar style="font-weight: 600; margin-top: 55px">
+       <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      >
+    </mat-icon>  
+
+      Super Admin</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item RouterLink="#">
         <span class="material-symbols-outlined"> dashboard </span>

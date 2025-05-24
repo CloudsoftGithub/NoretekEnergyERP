@@ -1,11 +1,8 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
  import { CustomerAccountComponent } from './components/customer-account/customer-account.component';
 import { LoginComponent } from './components/login/login.component';
-import { CustomerDashboardComponent } from './components/customer-dashboard/customer-dashboard.component';
-import { PinvendingComponent } from './components/pinvending/pinvending.component';
 
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminNavigationComponent } from './admin-navigation/admin-navigation.component';
@@ -13,6 +10,12 @@ import { SuperAdminNavigationComponent } from './super-admin-navigation/super-ad
 import { EnergyManagerDashboardComponent } from './energy-manager-dashboard/energy-manager-dashboard.component';
 import { EnergyManagerNavigationComponent } from './energy-manager-navigation/energy-manager-navigation.component';
 import { SuperAdminDashboardComponent } from './super-admin-dashboard/super-admin-dashboard.component';
+import { EnrolmentOfficerDashboardComponent } from './enrolment-officer-dashboard/enrolment-officer-dashboard.component';
+import { EnrolmentOfficerNavigationComponent } from './enrolment-officer-navigation/enrolment-officer-navigation.component';
+import { CustomerSupportDashboardComponent } from './customer-support-dashboard/customer-support-dashboard.component';
+import { CustomerSupportNavigationComponent } from './customer-support-navigation/customer-support-navigation.component';
+import { CustomerNavigationComponent } from './customer-navigation/customer-navigation.component';
+import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
 
 export const routes: Routes = [
   {
@@ -65,7 +68,32 @@ export const routes: Routes = [
   {
     path:'energy-manager-navigation',
     component: EnergyManagerNavigationComponent
+  },
+  {
+    path:'enrolment-officer-dashboard',
+    component: EnrolmentOfficerDashboardComponent,
+  },
+  {
+    path:'enrolment-officer-navigation',
+    component: EnrolmentOfficerNavigationComponent
+  },
+   {
+    path:'customer-support-dashboard>',
+    component: CustomerSupportDashboardComponent,
+  },
+  {
+    path:'customer-support-navigation',
+    component: CustomerSupportNavigationComponent
+  },
+  {
+    path:'customer-dashboard>',
+    component: CustomerDashboardComponent,
+  },
+  {
+    path:'customer-navigation',
+    component: CustomerNavigationComponent
   }
+ 
  
  
    
