@@ -20,7 +20,7 @@ import { RouterLink } from '@angular/router';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    RouterLink
+    
   ]
 })
 export class AdminDashboardComponent {
