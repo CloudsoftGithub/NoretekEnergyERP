@@ -16,6 +16,7 @@ import { CustomerSupportDashboardComponent } from './customer-support-dashboard/
 import { CustomerSupportNavigationComponent } from './customer-support-navigation/customer-support-navigation.component';
 import { CustomerNavigationComponent } from './customer-navigation/customer-navigation.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 export const routes: Routes = [
   {
@@ -92,6 +93,10 @@ export const routes: Routes = [
   {
     path:'customer-navigation',
     component: CustomerNavigationComponent
+  },
+  {
+    path:'signup',
+    component: SignupComponent
   }
  
  

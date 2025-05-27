@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { SuperAdminDashboardComponent } from '../super-admin-dashboard/super-admin-dashboard.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-super-admin-navigation',
@@ -21,7 +22,8 @@ import { SuperAdminDashboardComponent } from '../super-admin-dashboard/super-adm
     MatListModule,
     MatIconModule,
     AsyncPipe,
-    SuperAdminDashboardComponent
+    SuperAdminDashboardComponent,
+    RouterOutlet
   ]
 })
 export class SuperAdminNavigationComponent {

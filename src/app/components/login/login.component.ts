@@ -14,7 +14,8 @@ export class LoginComponent {
     userName: '',
     password: ''
   };
-  router = inject(Router)
+
+  router = inject(Router)/////
 
 
   onLogin(){

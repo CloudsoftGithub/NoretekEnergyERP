@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { AdminDashboardComponent } from '../admin-dashboard/admin-dashboard.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
  
 @Component({
   selector: 'app-admin-navigation',
@@ -21,7 +22,9 @@ import { AdminDashboardComponent } from '../admin-dashboard/admin-dashboard.comp
     MatListModule,
     MatIconModule,
     AsyncPipe,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    RouterOutlet,
+    RouterLink
   ]
 })
 export class AdminNavigationComponent {

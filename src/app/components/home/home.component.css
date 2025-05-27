@@ -3,12 +3,14 @@ body{
     padding: 48px;
 }
 .navbar{
-    background-color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(71, 71, 218);
 }
 .navbar-text,
 .navbar-brand,
 .navbar-link, .nav-link,.nav-item, .active{
-    color: white !important;
+    color:black !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-link{
@@ -31,3 +33,45 @@ body{
 .logo-img{
 margin-top: -2px;
 }
+.c-item{
+    height: 580px;
+}
+
+.c-image{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+.confi{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: left;
+}
+
+.confi2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.parent{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.parent button{
+    margin: 3px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.aboutus{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+
