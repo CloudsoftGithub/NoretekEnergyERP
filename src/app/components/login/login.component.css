@@ -1,12 +1,124 @@
-.background{
-    background-image: url("https://demo.paymoney.techvill.net/public/frontend/templates/images/home/bg-pattern.png");
-    height: 100vh;
-    background-size: cover ;
+body{
+    height: 5000px;
+    padding: 48px;
+}
+.navbar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    border-radius: 1px;
+}
+.navbar-text,
+.navbar-brand,
+.navbar-link, .nav-link,.nav-item, .active{
+    color:black !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.btn.custom{
-    background-color: blueviolet;
+.nav-link{
+    position: relative;
 }
-.btn.custom:hover{
-    background-color: rgb(10, 10, 87);
+.nav-link::after{
+    opacity: 0;
+    transition: all 0.2s;
+}
+.nav-link:hover::after{
+    opacity: 1;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.logo-img{
+margin-top: -2px;
+}
+.c-item{
+    height: 580px;
+}
+
+.c-image{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+.confi{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: left;
+}
+
+.confi2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.parent{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.parent button{
+    margin: 3px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.aboutus{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+}
+
+button{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+}
+
+.myInput{
+    width: 300px;
+    display: flex;
+    background-color: aliceblue;
+    border-width: 3px;
+}
+
+.myInputDiv{
+    display:flex ;
+    justify-content: center;
+}
+
+.myInputForgotePasswordDiv{
+    display: flex;
+    justify-content: space-between;
+        width: 300px;
+
+}
+.myButtonContinue{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+}
+
+.myButtonContinue{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.myButtonVerify{
+    display: flex;
+    justify-content: center;
+    
 }

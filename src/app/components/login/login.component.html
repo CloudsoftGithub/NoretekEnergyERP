@@ -1,3 +1,5 @@
+<!--
+
 <div class="container-fluid">
   <div class="row align-items-center min-vh-100">
  
@@ -76,4 +78,89 @@
   
     </div>
   </div>
+</div>
+
+-->
+
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-md" fixed-top>
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="/assests/logo.jpg"
+          alt="logo"
+          height="25"
+          width="40"
+          class="rounded-circle border border-info"
+        />
+
+        Noretek Energy ERP</a
+      >
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row mt-5">
+      <div class="text-center mt-5">
+        <h1>Sign in with</h1>
+        <div class="mt-5">
+          <button id="btn-siwg1" class="btn btn-outline-primary">
+            Google Account
+            <img src="/assests/googleimage3.png" width="40px" height="30px" />
+          </button>
+        </div>
+        <div class="text-center mt-2">
+          <button id="btn-siwg" class="btn btn-outline-primary">
+            Email Account
+            <img src="/assests/emailicon.jfif" width="40px" height="30px" />
+          </button>
+        </div>
+        <div class="text-center mt2" style="color: blue">
+          <h4>___________________ or ___________________</h4>
+        </div>
+        <div class="myInputDiv">
+          <input
+            name="userName"
+            style="background-color: white"
+            type="text"
+            class="form-control myInput"
+            formcControlName="username"
+            placeholder="User Name"
+            required
+          />
+        </div>
+
+        <div class="myInputDiv mt-2">
+          <input
+            name="userName"
+            style="background-color: white"
+            type="password"
+            class="form-control myInput"
+            formcControlName="username"
+            placeholder="User Name"
+            required
+          />
+        </div>
+        <div class="myInputDiv">
+          <p
+            class="text-primary"
+            style="cursor: pointer; color: darkblue; font-size: 10px"
+          >
+            <span> Forgote my login?</span>
+          </p>
+          <!--Remind me later-->
+        </div>
+           <button type="button" class="btn btn-primary myContinueButton" (click)="onClickEmailVerify()" style="background-color:darkblue;width: 300px; border-width: 2px;border-color: black;">Continue</button>
+      </div>
+     
+    </div>
+  </div>
+
+  
+</div>
+
+<div class="container-fluid">
+<div class="myButtonVerify mt-5 text-center">        
+       <button type="button" class="btn btn-primary myContinueButton" (click)="onClickEmailVerify()" style="background-color:darkblue;width: 300px; border-width: 2px;border-color: black;">Click to verify email</button>
+</div>
 </div>

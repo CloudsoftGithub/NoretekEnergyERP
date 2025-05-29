@@ -1,0 +1,32 @@
+.myEmailVeriIcon{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.myVerifactionMessageDiv{
+    text-align: center;
+     justify-content: center;
+    margin-top: 35px;
+}
+
+input{
+    line-height: 70px;
+    width: 90px;
+}
+.myVerifactionResendButtonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.myVerifactionMessageButtonDiv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+button{
+    width: 490px;
+    height: 50px;
+    background-color: darkblue;
+}

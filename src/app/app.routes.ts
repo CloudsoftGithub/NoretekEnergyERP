@@ -17,6 +17,9 @@ import { CustomerSupportNavigationComponent } from './customer-support-navigatio
 import { CustomerNavigationComponent } from './customer-navigation/customer-navigation.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { CustomerSupportPageComponent } from './components/customer-support-page/customer-support-page.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { ComplaintComponent } from './components/complaint/complaint.component';
 
 export const routes: Routes = [
   {
@@ -97,6 +100,18 @@ export const routes: Routes = [
   {
     path:'signup',
     component: SignupComponent
+  },
+  {
+    path: 'customer-support-page',
+    component: CustomerSupportPageComponent
+  },
+  {
+    path:'verify-email',
+    component: VerifyEmailComponent
+  },
+  {
+    path:'complaint',
+    component:ComplaintComponent
   }
  
  

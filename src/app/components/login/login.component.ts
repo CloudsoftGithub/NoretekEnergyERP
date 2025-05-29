@@ -50,5 +50,8 @@ export class LoginComponent {
         this.router.navigateByUrl("/customer-navigation");
 
   }
+  onClickEmailVerify(){
+    this.router.navigateByUrl("/verify-email");
+  }
 
 }
